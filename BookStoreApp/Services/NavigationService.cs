@@ -5,8 +5,7 @@ namespace BookStoreApp.Services;
 
 public partial class NavigationService : ObservableObject, INavigationService
 {
-    [ObservableProperty]
-    private ObservableObject? _currentView;
+    [ObservableProperty] private ObservableObject? _currentView;
 
     public void NavigateTo<T>() where T : ObservableObject
     {

@@ -3,10 +3,70 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:BookStoreApp"
+        xmlns:vm="clr-namespace:BookStoreApp.ViewModels"
+        xmlns:views="clr-namespace:BookStoreApp.Views"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Modern WPF App" Height="600" Width="1000"
+        Style="{StaticResource MaterialDesignWindow}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Normal"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto">
+    
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+    
     <Grid>
-
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Modern Navigation Sidebar -->
+        <Border Grid.Column="0" Width="200" Background="#2E3440">
+            <StackPanel>
+                <!-- App Logo/Title -->
+                <StackPanel Orientation="Horizontal" Margin="20,30" HorizontalAlignment="Center">
+                    <Image Source="/Assets/logo.png" Width="24" Height="24"/>
+                    <TextBlock Text="MyApp" Margin="10,0,0,0" 
+                               Foreground="White" FontSize="16" FontWeight="Bold"/>
+                </StackPanel>
+                
+                <!-- Navigation Items -->
+                <ItemsControl ItemsSource="{Binding NavigationItems}" Margin="0,20,0,0">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Button Command="{Binding DataContext.NavigateCommand, RelativeSource={
+                                      RelativeSource AncestorType=Window}}"
+                                    CommandParameter="{Binding  }"
+                                   >
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="{Binding Icon}" Width="16" Height="16" Foreground="White"/>
+                                    <TextBlock Text="{Binding Title}" Foreground="White"/>
+                                </StackPanel>
+                            </Button>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </Border>
+        <!-- Content Area -->
+        <ContentControl Grid.Column="1" Content="{Binding NavigationService.CurrentView}">
+            <ContentControl.Resources>
+                <DataTemplate DataType="{x:Type vm:HomeViewModel}">
+                    <views:HomeView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:DashboardViewModel}">
+                    <views:DashboardView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:SettingsViewModel}">
+                    <views:SettingsView/>
+                </DataTemplate>
+            </ContentControl.Resources>
+        </ContentControl>
     </Grid>
 </Window>
