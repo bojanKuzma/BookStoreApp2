@@ -1,0 +1,36 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="UsernameHint">Unesite svoje korisničko ime</system:String>
+    <system:String x:Key="PasswordHint">Unesite svoju lozinku</system:String>
+    <system:String x:Key="LoginButton">Prijavite se</system:String>
+    <system:String x:Key="LoginFieldsErrorMessage">Molimo Vas da unesete i korisničko ime i lozinku</system:String>
+    <system:String x:Key="UnsuccessfulLoginErrorMessage">Neispravno korisničko ime ili lozinka</system:String>
+    <system:String x:Key="Home">Početna</system:String>
+    <system:String x:Key="Dashboard">Kontrolna tabla</system:String>
+    <system:String x:Key="Settings">Podešavanja</system:String>
+    <system:String x:Key="Logout">Odjavi se</system:String>
+    <system:String x:Key="Login">Prijavi se</system:String>
+    <system:String x:Key="Register">Registruj se</system:String>
+    <system:String x:Key="EmailValidFormatError">Nevažeći format E-pošte</system:String>
+    <system:String x:Key="LanguageHint">Jezik</system:String>
+    <system:String x:Key="EmailHint">Unesite svoju adresu E-pošte</system:String>
+    <system:String x:Key="RegisterButton">Registruj se</system:String>
+    <system:String x:Key="CreateAccount">Kreirajte nalog</system:String>
+    <system:String x:Key="IsDarkTheme">Omogući tamnu temu:</system:String>
+    <system:String x:Key="PrimaryColor">Izaberite osnovnu boju:</system:String>
+    <system:String x:Key="Username">Korisničko ime</system:String>
+    <system:String x:Key="RoleHint">Uloga</system:String>
+    <system:String x:Key="AddNewUser">Dodaj novog korisnika</system:String>
+    <system:String x:Key="Search">Pretraga...</system:String>
+    <system:String x:Key="Role">Uloga</system:String>
+    <system:String x:Key="Email">Email</system:String>
+    <system:String x:Key="Password">Lozinka</system:String>
+    <system:String x:Key="Confirm">Potvrdi</system:String>
+    <system:String x:Key="Cancel">Otkaži</system:String>
+    <system:String x:Key="Save">Sačuvaj</system:String>
+    <system:String x:Key="Delete">Obriši</system:String>
+    <system:String x:Key="Edit">Izmjeni</system:String>
+    <system:String x:Key="UserDeleteModal">Da li ste sigurni da želite da obrišete ovog korisnika?</system:String>
+</ResourceDictionary>

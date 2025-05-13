@@ -2,61 +2,37 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
-    <ScrollViewer>
-        <StackPanel Margin="16">
-            <!-- Theme Toggle -->
-            <materialDesign:Card>
-                <StackPanel Margin="16">
-                    <TextBlock Text="Appearance" Style="{StaticResource MaterialDesignHeadline6TextBlock}"/>
-                    <ToggleButton 
-                                IsChecked="{Binding IsDarkTheme}"
-                                Style="{StaticResource MaterialDesignSwitchToggleButton}"/>
-                </StackPanel>
-            </materialDesign:Card>
-            
-            <!-- Primary Color -->
-            <materialDesign:Card>
-                <StackPanel Margin="16">
-                    <TextBlock Text="Primary Color" Style="{StaticResource MaterialDesignHeadline6TextBlock}"/>
-                    <ComboBox ItemsSource="{Binding AvailablePrimaryColors}"
-                            SelectedValue="{Binding PrimaryColor}">
-                        <ComboBox.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
-                                    <Rectangle Width="20" Height="20" Margin="0,0,8,0">
-                                        <Rectangle.Fill>
-                                            <SolidColorBrush Color="{Binding}"/>
-                                        </Rectangle.Fill>
-                                    </Rectangle>
-                                    <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ComboBox.ItemTemplate>
-                    </ComboBox>
-                </StackPanel>
-            </materialDesign:Card>
-            
-            <!-- Accent Color -->
-            <materialDesign:Card>
-                <StackPanel Margin="16">
-                    <TextBlock Text="Accent Color" Style="{StaticResource MaterialDesignHeadline6TextBlock}"/>
-                    <ComboBox ItemsSource="{Binding AvailableAccentColors}"
-                            SelectedValue="{Binding AccentColor}">
-                        <ComboBox.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
-                                    <Rectangle Width="20" Height="20" Margin="0,0,8,0">
-                                        <Rectangle.Fill>
-                                            <SolidColorBrush Color="{Binding}"/>
-                                        </Rectangle.Fill>
-                                    </Rectangle>
-                                    <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ComboBox.ItemTemplate>
-                    </ComboBox>
-                </StackPanel>
-            </materialDesign:Card>
-        </StackPanel>
-    </ScrollViewer>
+    <StackPanel Margin="16">
+        <!-- Theme Toggle -->
+        <materialDesign:Card>
+            <StackPanel Margin="16">
+                <TextBlock Text="{DynamicResource UserSettings}" Style="{StaticResource MaterialDesignHeadline4TextBlock}" />
+                <Grid>
+                    <TextBlock Text="{DynamicResource IsDarkTheme}" Style="{StaticResource MaterialDesignHeadline6TextBlock}" />
+                    <ToggleButton
+                        IsChecked="{Binding IsDarkTheme}"
+                        Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                        ToolTip="MaterialDesignSwitchLightToggleButton"    
+                    />
+                    
+                </Grid>
+                <TextBlock Text="{DynamicResource PrimaryColor}" Style="{StaticResource MaterialDesignHeadline6TextBlock}" />
+                <ComboBox ItemsSource="{Binding AvailablePrimaryColors}"
+                          SelectedValue="{Binding PrimaryColor}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Rectangle Width="20" Height="20" Margin="0,0,8,0">
+                                    <Rectangle.Fill>
+                                        <SolidColorBrush Color="{Binding}" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
+                                <TextBlock Text="{Binding}" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel>
+        </materialDesign:Card>
+    </StackPanel>
 </UserControl>

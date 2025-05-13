@@ -9,6 +9,7 @@ namespace BookStoreApp.ViewModels;
 public partial class SettingsViewModel : ObservableObject
 {
     private readonly IThemeService _themeService;
+    private readonly IAuthenticationService _authenticationService;
 
     [ObservableProperty]
     private bool _isDarkTheme;
@@ -16,20 +17,14 @@ public partial class SettingsViewModel : ObservableObject
     [ObservableProperty]
     private Color _primaryColor;
 
-    [ObservableProperty]
-    private Color _accentColor;
-
     public IEnumerable<Color> AvailablePrimaryColors => _themeService.AvailablePrimaryColors;
-    public IEnumerable<Color> AvailableAccentColors => _themeService.AvailableAccentColors;
 
-    public SettingsViewModel(IThemeService themeService)
+    public SettingsViewModel(IThemeService themeService, IAuthenticationService authenticationService)
     {
         _themeService = themeService;
-            
-        // Initialize with current theme settings
+        _authenticationService = authenticationService;
         _isDarkTheme = _themeService.IsDarkTheme;
         _primaryColor = _themeService.PrimaryColor;
-        _accentColor = _themeService.AccentColor;
     }
 
     [RelayCommand]
@@ -37,7 +32,9 @@ public partial class SettingsViewModel : ObservableObject
     {
         _themeService.IsDarkTheme = IsDarkTheme;
         _themeService.PrimaryColor = PrimaryColor;
-        _themeService.AccentColor = AccentColor;
+        _authenticationService.CurrentUser.DarkTheme = IsDarkTheme;
+        _authenticationService.CurrentUser.ThemeColor = PrimaryColor.ToString().Replace("#FF","#");
+        _authenticationService.UpdateUserAsync(_authenticationService.CurrentUser);
         _themeService.ApplyTheme();
     }
 
@@ -47,11 +44,6 @@ public partial class SettingsViewModel : ObservableObject
     }
 
     partial void OnPrimaryColorChanged(Color value)
-    {
-        ApplyThemeCommand.Execute(null);
-    }
-
-    partial void OnAccentColorChanged(Color value)
     {
         ApplyThemeCommand.Execute(null);
     }

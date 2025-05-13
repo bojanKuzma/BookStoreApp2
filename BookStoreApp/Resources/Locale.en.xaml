@@ -1,0 +1,43 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <system:String x:Key="UsernameHint">Enter your username</system:String>
+    <system:String x:Key="PasswordHint">Enter your password</system:String>
+    <system:String x:Key="LoginButton">Login</system:String>
+    <system:String x:Key="UnsuccessfulLoginErrorMessage">Invalid username or password</system:String>
+    <system:String x:Key="Home">Home</system:String>
+    <system:String x:Key="Dashboard">Dashboard</system:String>
+    <system:String x:Key="Settings">Settings</system:String>
+    <system:String x:Key="Logout">Logout</system:String>
+    <system:String x:Key="Login">Login</system:String>
+    <system:String x:Key="Register">Register</system:String>
+    <system:String x:Key="EmailValidFormatError">Invalid email format</system:String>
+    <system:String x:Key="LanguageHint">Language</system:String>
+    <system:String x:Key="EmailHint">Enter your email</system:String>
+    <system:String x:Key="RegisterButton">Register</system:String>
+    <system:String x:Key="CreateAccount">Create Account</system:String>
+    <system:String x:Key="IsDarkTheme">Enable dark theme:</system:String>
+    <system:String x:Key="PrimaryColor">Select primary color:</system:String>
+    <system:String x:Key="Username">Username</system:String>
+    <system:String x:Key="RoleHint">Role</system:String>
+    <system:String x:Key="AddNewUser">Add new User</system:String>
+    <system:String x:Key="Search">Search...</system:String>
+    
+    <system:String x:Key="Role">Role</system:String>
+    <system:String x:Key="Email">Email</system:String>
+    <system:String x:Key="Password">Password</system:String>
+    <system:String x:Key="Confirm">Confirm</system:String>
+    <system:String x:Key="Cancel">Cancel</system:String>
+    <system:String x:Key="Save">Save</system:String>
+    <system:String x:Key="Delete">Delete</system:String>
+    <system:String x:Key="Edit">Edit</system:String>
+    <system:String x:Key="UserDeleteModal">Are you sure you want to delete this user?</system:String>
+    
+    <system:String x:Key="FirstName">Firstname</system:String>
+    <system:String x:Key="LastName">Lastname</system:String>
+    <system:String x:Key="DateOfBirth">Date of birth</system:String>
+    <system:String x:Key="AddNewAuthor">Add new Author</system:String>
+    <system:String x:Key="AuthorDeleteModal">Are you sure you want to delete this author?</system:String>
+
+</ResourceDictionary>

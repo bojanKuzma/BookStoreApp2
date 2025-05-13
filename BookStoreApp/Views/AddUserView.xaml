@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="BookStoreApp.Views.AddUserView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d">
+    <StackPanel Margin="20">
+        <TextBox Text="{Binding Username}" Margin="0 ,10" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="{DynamicResource Username}"/>
+        <TextBox Text="{Binding Email}" Margin="0,10" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="{DynamicResource Email}"/>
+        <ComboBox Style="{StaticResource MaterialDesignFloatingHintComboBox}" materialDesign:HintAssist.Hint="{DynamicResource RoleHint}" SelectedItem="{Binding Role, Mode=TwoWay}" ItemsSource="{Binding Roles}" Margin="0,10" />
+        <PasswordBox Visibility="{Binding PasswordVisible, Converter={StaticResource BooleanToVisibilityConverter}}" PasswordChanged="PasswordBox_PasswordChanged" Margin="0,10" materialDesign:HintAssist.Hint="{DynamicResource Password}"
+                     Style="{StaticResource MaterialDesignFloatingHintPasswordBox}">
+        </PasswordBox>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="{DynamicResource Cancel}" Command="{Binding CancelCommand}" Margin="5" />
+            <Button Content="{DynamicResource Save}" Command="{Binding SaveUserCommand}" Margin="5" />
+        </StackPanel>
+    </StackPanel>
+</UserControl>

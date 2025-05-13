@@ -11,4 +11,9 @@ public partial class NavigationService : ObservableObject, INavigationService
     {
         CurrentView = Ioc.Default.GetService<T>();
     }
+    
+    public void NavigateToViewModel<T>(T viewModel) where T : ObservableObject
+    {
+       CurrentView = viewModel;
+    }
 }
