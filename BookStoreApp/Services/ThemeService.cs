@@ -21,9 +21,10 @@ public class ThemeService : IThemeService
 
     public IEnumerable<Color> AvailablePrimaryColors { get; } = new List<Color>
     {
-        (Color)ColorConverter.ConvertFromString("#F44336"),
+        (Color)ColorConverter.ConvertFromString("#009688"),
         (Color)ColorConverter.ConvertFromString("#673AB7"),
-        (Color)ColorConverter.ConvertFromString("#CDDC39")
+        (Color)ColorConverter.ConvertFromString("#E91E63"),
+        (Color)ColorConverter.ConvertFromString("#03A9F4"),
         
     };
         

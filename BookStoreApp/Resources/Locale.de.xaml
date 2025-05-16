@@ -32,4 +32,22 @@
     <system:String x:Key="Delete">Löschen</system:String>
     <system:String x:Key="Edit">Bearbeiten</system:String>
     <system:String x:Key="UserDeleteModal">Möchten Sie diesen Benutzer wirklich löschen?</system:String>
+    
+    <system:String x:Key="FirstName">Vorname</system:String>
+    <system:String x:Key="LastName">Nachname</system:String>
+    <system:String x:Key="DateOfBirth">Geburtsdatum</system:String>
+    <system:String x:Key="AddNewAuthor">Neuen Autor hinzufügen</system:String>
+    <system:String x:Key="AuthorDeleteModal">Sind Sie sicher, dass Sie diesen Autor löschen möchten?</system:String>
+    
+    <system:String x:Key="Name">Name</system:String>
+    <system:String x:Key="AddNewGenre">Neues Genre hinzufügen</system:String>
+    <system:String x:Key="GenreDeleteModal">Möchten Sie dieses Genre wirklich löschen?</system:String>
+    
+    <system:String x:Key="Title">Titel</system:String>
+    <system:String x:Key="AddNewBook">Neues Buch hinzufügen</system:String>
+    <system:String x:Key="BookDeleteModal">Möchten Sie dieses Buch wirklich löschen?</system:String>
+    
+    <system:String x:Key="ImageUrl">Buchcover-URL</system:String>
+    <system:String x:Key="ShortDescription">Kurzbeschreibung</system:String>
+    <system:String x:Key="Content">Inhalt</system:String>
 </ResourceDictionary>

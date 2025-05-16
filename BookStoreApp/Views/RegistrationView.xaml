@@ -72,6 +72,7 @@
                 Content="{DynamicResource RegisterButton}"
                 CommandParameter="{Binding ElementName=PasswordBox}"
                 HorizontalAlignment="Center"
+                Foreground="White"
                 Width="120"
                 Height="40"
                 Style="{StaticResource MaterialDesignRaisedButton}" />

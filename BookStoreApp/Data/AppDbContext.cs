@@ -8,6 +8,8 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
 {
     public DbSet<User> Users { get; set; }
     public DbSet<Author> Authors { get; set; }
+    public DbSet<Genre> Genres { get; set; }
+    public DbSet<Book> Books { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
@@ -16,9 +18,20 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
+        builder.Entity<Genre>()
+            .HasIndex(g => g.Name)
+            .IsUnique();
         builder.Entity<User>()
             .HasIndex(u => u.Username)
             .IsUnique();
+        
+        builder.Entity<Book>()
+            .HasMany(b => b.Genres)
+            .WithMany(g => g.Books);
+
+        builder.Entity<Book>()
+            .HasMany(b => b.Authors)
+            .WithMany(a => a.Books);
 
         builder.Entity<User>()
             .HasIndex(u => u.Email)

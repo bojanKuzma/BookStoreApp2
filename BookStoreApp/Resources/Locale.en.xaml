@@ -40,4 +40,19 @@
     <system:String x:Key="AddNewAuthor">Add new Author</system:String>
     <system:String x:Key="AuthorDeleteModal">Are you sure you want to delete this author?</system:String>
 
+    <system:String x:Key="Name">Name</system:String>
+    <system:String x:Key="AddNewGenre">Add new Genre</system:String>
+    <system:String x:Key="GenreDeleteModal">Are you sure you want to delete this genre?</system:String>
+    
+    <system:String x:Key="Title">Title</system:String>
+    <system:String x:Key="AddNewBook">Add new Book</system:String>
+    <system:String x:Key="BookDeleteModal">Are you sure you want to delete this book?</system:String>
+    <system:String x:Key="Authors">Authors</system:String>
+    <system:String x:Key="Genres">Genres</system:String>
+    
+    <system:String x:Key="SelectGenres">Select genres</system:String>
+    <system:String x:Key="SelectAuthors">Select authors</system:String>
+    <system:String x:Key="ImageUrl">Book cover URL</system:String>
+    <system:String x:Key="ShortDescription">Short Description</system:String>
+    <system:String x:Key="Content">Content</system:String>
 </ResourceDictionary>

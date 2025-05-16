@@ -62,7 +62,16 @@ public partial class MainViewModel : ObservableObject
                         ViewModelType = typeof(AuthorViewModel)
                     }
                 );
-
+                NavigationItems.Add(new NavigationItem
+                {
+                    Title = Strings.GenreNavigationTitle, Icon = "Tag",
+                    ViewModelType = typeof(GenresViewModel)
+                });
+                NavigationItems.Add(new NavigationItem
+                {
+                    Title = Strings.BookNavigationTitle, Icon = "Book",
+                    ViewModelType = typeof(BookViewModel)
+                });
                 NavigationItems.Add(new NavigationItem
                 {
                     Title = Strings.DashboardNavigationTitle, Icon = "Dashboard",

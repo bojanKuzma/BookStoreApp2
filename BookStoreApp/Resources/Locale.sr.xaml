@@ -33,4 +33,22 @@
     <system:String x:Key="Delete">Obriši</system:String>
     <system:String x:Key="Edit">Izmjeni</system:String>
     <system:String x:Key="UserDeleteModal">Da li ste sigurni da želite da obrišete ovog korisnika?</system:String>
+    
+    <system:String x:Key="FirstName">Ime</system:String>
+    <system:String x:Key="LastName">Prezime</system:String>
+    <system:String x:Key="DateOfBirth">Datum rođenja</system:String>
+    <system:String x:Key="AddNewAuthor">Dodaj novog autora</system:String>
+    <system:String x:Key="AuthorDeleteModal">Da li ste sigurni da želite da obrišete ovog autora?</system:String>
+    
+    <system:String x:Key="Name">Naziv</system:String>
+    <system:String x:Key="AddNewGenre">Dodaj novi žanr</system:String>
+    <system:String x:Key="GenreDeleteModal">Da li ste sigurni da želite izbrisati ovaj žanr?</system:String>
+    
+    <system:String x:Key="Title">Naslov</system:String>
+    <system:String x:Key="AddNewBook">Dodaj novu knjigu</system:String>
+    <system:String x:Key="BookDeleteModal">Da li ste sigurni da želite izbrisati ovu knjigu?</system:String>
+    
+    <system:String x:Key="ImageUrl">URL korica knjige</system:String>
+    <system:String x:Key="ShortDescription">Kratak opis</system:String>
+    <system:String x:Key="Content">Sadržaj</system:String>
 </ResourceDictionary>

@@ -20,11 +20,13 @@
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                     <Button Content="{DynamicResource Cancel}"
                             Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
-                            Margin="5" />
+                            Margin="5" 
+                            Foreground="White"/>
                     <Button Content="{DynamicResource Confirm}"
                             Command="{Binding DataContext.DeleteUserCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
                             CommandParameter="{Binding DataContext.SelectedUser, RelativeSource={RelativeSource AncestorType=UserControl}}"
                             Margin="5"
+                            Foreground="White" BorderBrush="Green" Background="Green"
                           />
                 </StackPanel>
             </StackPanel>
@@ -43,7 +45,7 @@
                 <TextBox Grid.Column="0" Width="200" Margin="5"
                          Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
                          materialDesign:HintAssist.Hint="{DynamicResource Search}" />
-                <Button Grid.Column="2" Content="{DynamicResource AddNewUser}" Command="{Binding AddUserCommand}" Margin="5" />
+                <Button Grid.Column="2" Content="{DynamicResource AddNewUser}" Command="{Binding AddUserCommand}" Margin="5" Foreground="White" BorderBrush="Green" Background="Green"/>
             </Grid>
             <DataGrid Grid.Row="1" IsReadOnly="True" ItemsSource="{Binding Users}"
                       SelectedItem="{Binding SelectedUser}" AutoGenerateColumns="False" Margin="10">
@@ -57,7 +59,8 @@
                             <DataTemplate>
                                 <Button Content="{DynamicResource Delete}"
                                         Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"
-                                        Visibility="{Binding Converter={StaticResource UserToCanDeleteConverter}}" />
+                                        Visibility="{Binding Converter={StaticResource UserToCanDeleteConverter}}" 
+                                        Foreground="White" BorderBrush="Red" Background="Red"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -69,6 +72,7 @@
                                 <Button Content="{DynamicResource Edit}"
                                         Command="{Binding DataContext.UpdateUserCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
                                         CommandParameter="{Binding}" 
+                                        Foreground="White"
                                         />
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>

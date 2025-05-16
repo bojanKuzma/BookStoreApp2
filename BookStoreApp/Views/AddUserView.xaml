@@ -13,8 +13,8 @@
                      Style="{StaticResource MaterialDesignFloatingHintPasswordBox}">
         </PasswordBox>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Content="{DynamicResource Cancel}" Command="{Binding CancelCommand}" Margin="5" />
-            <Button Content="{DynamicResource Save}" Command="{Binding SaveUserCommand}" Margin="5" />
+            <Button Content="{DynamicResource Cancel}" Command="{Binding CancelCommand}" Margin="5" Foreground="White"/>
+            <Button Content="{DynamicResource Save}" Command="{Binding SaveUserCommand}" Margin="5" Foreground="White" BorderBrush="Green" Background="Green"/>
         </StackPanel>
     </StackPanel>
 </UserControl>

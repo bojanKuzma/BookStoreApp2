@@ -69,6 +69,15 @@ namespace BookStoreApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Knjige.
+        /// </summary>
+        internal static string BookNavigationTitle {
+            get {
+                return ResourceManager.GetString("BookNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kontrolna tabla.
         /// </summary>
         internal static string DashboardNavigationTitle {
@@ -105,6 +114,24 @@ namespace BookStoreApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Postoji žanr sa istim nazivom.
+        /// </summary>
+        internal static string GenreAlreadyExists {
+            get {
+                return ResourceManager.GetString("GenreAlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Žanr.
+        /// </summary>
+        internal static string GenreNavigationTitle {
+            get {
+                return ResourceManager.GetString("GenreNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Korisnici.
         /// </summary>
         internal static string HomeNavigationTitle {
@@ -128,6 +155,15 @@ namespace BookStoreApp.Resources {
         internal static string LogoutNavigationTitle {
             get {
                 return ResourceManager.GetString("LogoutNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maksimalna dužina polja je 50 znakova.
+        /// </summary>
+        internal static string MaxLength {
+            get {
+                return ResourceManager.GetString("MaxLength", resourceCulture);
             }
         }
         

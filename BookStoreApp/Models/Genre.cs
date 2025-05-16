@@ -3,16 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BookStoreApp.Models;
 
-
-[Table("Authors")]
-public class Author
+[Table("Genres")]
+public class Genre
 {
     [Key]
     public int Id { get; set; }
-    [MaxLength(70)]
-    public required string FirstName { get; set; }
-    [MaxLength(120)]
-    public required string LastName { get; set; }
-    public DateTime DateOfBirth { get; set; }
+
+    [Required]
+    [MaxLength(50)]
+    public string Name { get; set; }
     public ICollection<Book> Books { get; set; } = new List<Book>();
 }

@@ -69,6 +69,15 @@ namespace BookStoreApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Books.
+        /// </summary>
+        internal static string BookNavigationTitle {
+            get {
+                return ResourceManager.GetString("BookNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dashboard.
         /// </summary>
         internal static string DashboardNavigationTitle {
@@ -105,6 +114,24 @@ namespace BookStoreApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A Genre with the same name exists.
+        /// </summary>
+        internal static string GenreAlreadyExists {
+            get {
+                return ResourceManager.GetString("GenreAlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Genre.
+        /// </summary>
+        internal static string GenreNavigationTitle {
+            get {
+                return ResourceManager.GetString("GenreNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Users.
         /// </summary>
         internal static string HomeNavigationTitle {
@@ -128,6 +155,15 @@ namespace BookStoreApp.Resources {
         internal static string LogoutNavigationTitle {
             get {
                 return ResourceManager.GetString("LogoutNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Max length of the field is 50 characters.
+        /// </summary>
+        internal static string MaxLength {
+            get {
+                return ResourceManager.GetString("MaxLength", resourceCulture);
             }
         }
         
