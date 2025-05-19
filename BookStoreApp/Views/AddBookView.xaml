@@ -37,7 +37,7 @@
             <StackPanel Margin="0,10,0,10">
                 <!-- ComboBox with checkboxes -->
                 <ComboBox ItemsSource="{Binding SelectedAuthors}"
-                          materialDesign:HintAssist.Hint="Select Authors"
+                          materialDesign:HintAssist.Hint="{DynamicResource SelectAuthors}"
                           Text="{Binding SelectedAuthorsText, Mode=OneWay}"
                           IsEditable="True"
                           IsReadOnly="True">

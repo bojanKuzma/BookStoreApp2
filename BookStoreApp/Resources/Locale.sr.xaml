@@ -47,8 +47,32 @@
     <system:String x:Key="Title">Naslov</system:String>
     <system:String x:Key="AddNewBook">Dodaj novu knjigu</system:String>
     <system:String x:Key="BookDeleteModal">Da li ste sigurni da želite izbrisati ovu knjigu?</system:String>
-    
+    <system:String x:Key="Authors">Autori</system:String>
+    <system:String x:Key="Genres">Žanrovi</system:String>
+
+    <system:String x:Key="SelectGenres">Odaberite žanrove</system:String>
+    <system:String x:Key="SelectAuthors">Odaberite autore</system:String>
     <system:String x:Key="ImageUrl">URL korica knjige</system:String>
     <system:String x:Key="ShortDescription">Kratak opis</system:String>
+    <system:String x:Key="ShortDescription:">Kratak opis:</system:String>
     <system:String x:Key="Content">Sadržaj</system:String>
+    
+    <system:String x:Key="Authors:">Autori:</system:String>
+    <system:String x:Key="Order">Naruči</system:String>
+    <system:String x:Key="Read">Čitaj</system:String>
+    <system:String x:Key="Back">Nazad</system:String>
+    
+    <system:String x:Key="Actions">Akcije</system:String>
+    <system:String x:Key="OrderDate">Datum narudžbe</system:String>
+    <system:String x:Key="Approved">Odobreno</system:String>
+    <system:String x:Key="Pending">Na čekanju</system:String>
+    <system:String x:Key="Rejected">Odbijeno</system:String>
+    <system:String x:Key="Reject">Odbij</system:String>
+    <system:String x:Key="All">Svi</system:String>
+    
+    <system:String x:Key="Author">Autor</system:String>
+    <system:String x:Key="PublicationYear">Godina objavljivanja</system:String>
+    <system:String x:Key="SendRequest">Pošalji zahtjev</system:String>
+    <system:String x:Key="RequestDate">Datum zahtjeva</system:String>
+    
 </ResourceDictionary>

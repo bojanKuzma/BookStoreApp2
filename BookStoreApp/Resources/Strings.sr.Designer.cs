@@ -60,6 +60,33 @@ namespace BookStoreApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Zahtjev za novu knjigu.
+        /// </summary>
+        internal static string AddBookRequestNavigationTitle {
+            get {
+                return ResourceManager.GetString("AddBookRequestNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Svi.
+        /// </summary>
+        internal static string All {
+            get {
+                return ResourceManager.GetString("All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Odobreno.
+        /// </summary>
+        internal static string Approved {
+            get {
+                return ResourceManager.GetString("Approved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Autori.
         /// </summary>
         internal static string AuthorsNavigationTitle {
@@ -69,11 +96,56 @@ namespace BookStoreApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Knjižara.
+        /// </summary>
+        internal static string BookListNavigationTitle {
+            get {
+                return ResourceManager.GetString("BookListNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Knjige.
         /// </summary>
         internal static string BookNavigationTitle {
             get {
                 return ResourceManager.GetString("BookNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Narudžbe knjiga.
+        /// </summary>
+        internal static string BookOrdersNavigationTitle {
+            get {
+                return ResourceManager.GetString("BookOrdersNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zahtjevi za knjige.
+        /// </summary>
+        internal static string BookRequestsNavigationTitle {
+            get {
+                return ResourceManager.GetString("BookRequestsNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Potvrdi odobrenje.
+        /// </summary>
+        internal static string ConfirmApproval {
+            get {
+                return ResourceManager.GetString("ConfirmApproval", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Potvrdi odbijanje.
+        /// </summary>
+        internal static string ConfirmRejection {
+            get {
+                return ResourceManager.GetString("ConfirmRejection", resourceCulture);
             }
         }
         
@@ -123,7 +195,7 @@ namespace BookStoreApp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Žanr.
+        ///   Looks up a localized string similar to Žanrovi.
         /// </summary>
         internal static string GenreNavigationTitle {
             get {
@@ -168,6 +240,42 @@ namespace BookStoreApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Zahtjev je uspješno poslan.
+        /// </summary>
+        internal static string NotificationMessage {
+            get {
+                return ResourceManager.GetString("NotificationMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Moje knjige.
+        /// </summary>
+        internal static string OwnedBooksNavigationTitle {
+            get {
+                return ResourceManager.GetString("OwnedBooksNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Na čekanju.
+        /// </summary>
+        internal static string Pending {
+            get {
+                return ResourceManager.GetString("Pending", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Molim Vas unesite važeću godinu od 4 cifre.
+        /// </summary>
+        internal static string RangeError {
+            get {
+                return ResourceManager.GetString("RangeError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Korisničko ime ili e-mail adresa su već u upotrebi.
         /// </summary>
         internal static string RegistrationExistingError {
@@ -182,6 +290,15 @@ namespace BookStoreApp.Resources {
         internal static string RegistrationNavigationTitle {
             get {
                 return ResourceManager.GetString("RegistrationNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Odbijeno.
+        /// </summary>
+        internal static string Rejected {
+            get {
+                return ResourceManager.GetString("Rejected", resourceCulture);
             }
         }
         

@@ -46,8 +46,31 @@
     <system:String x:Key="Title">Titel</system:String>
     <system:String x:Key="AddNewBook">Neues Buch hinzufügen</system:String>
     <system:String x:Key="BookDeleteModal">Möchten Sie dieses Buch wirklich löschen?</system:String>
-    
+    <system:String x:Key="Authors">Autoren</system:String>
+    <system:String x:Key="Genres">Genres</system:String>
+
+    <system:String x:Key="SelectGenres">Genres auswählen</system:String>
+    <system:String x:Key="SelectAuthors">Autoren auswählen</system:String>
     <system:String x:Key="ImageUrl">Buchcover-URL</system:String>
     <system:String x:Key="ShortDescription">Kurzbeschreibung</system:String>
+    <system:String x:Key="ShortDescription:">Kurzbeschreibung:</system:String>
     <system:String x:Key="Content">Inhalt</system:String>
+    
+    <system:String x:Key="Authors:">Autoren:</system:String>
+    <system:String x:Key="Order">Bestellen</system:String>
+    <system:String x:Key="Read">Lesen</system:String>
+    <system:String x:Key="Back">Zurück</system:String>
+    
+    <system:String x:Key="Actions">Aktionen</system:String>
+    <system:String x:Key="OrderDate">Bestelldatum</system:String>
+    <system:String x:Key="Approved">Genehmigt</system:String>
+    <system:String x:Key="Pending">Ausstehend</system:String>
+    <system:String x:Key="Rejected">Abgelehnt</system:String>
+    <system:String x:Key="All">Alle</system:String>
+    <system:String x:Key="Reject">Ablehnen</system:String>
+    
+    <system:String x:Key="Author">Autor</system:String>
+    <system:String x:Key="PublicationYear">Erscheinungsjahr</system:String>
+    <system:String x:Key="SendRequest">Anfrage senden</system:String>
+    <system:String x:Key="RequestDate">Anfragedatum</system:String>
 </ResourceDictionary>

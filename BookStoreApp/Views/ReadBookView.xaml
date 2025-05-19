@@ -1,0 +1,135 @@
+﻿<UserControl x:Class="BookStoreApp.Views.ReadBookView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:converters="clr-namespace:BookStoreApp.Converters"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <converters:ImageSourceConverter x:Key="ImageSourceConverter"/>
+        <converters:AuthorNamesConverter x:Key="AuthorNamesConverter"/>
+    </UserControl.Resources>
+
+
+        <materialDesign:Flipper IsFlipped="{Binding IsReadingContent}">
+            <!-- Book Info Page -->
+            <materialDesign:Flipper.FrontContent>
+                <Grid Margin="16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!-- Header - Book Title -->
+                    <TextBlock Grid.Row="0" 
+                               Text="{Binding Book.Title}"
+                               Margin="0,0,0,20"
+                               Style="{StaticResource MaterialDesignHeadline4TextBlock}"
+                               HorizontalAlignment="Center"
+                               TextWrapping="Wrap"/>
+                    
+                    <!-- Content - Book Cover, Authors, Description -->
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <!-- Book Cover -->
+                        <Border Grid.Column="0" 
+                                BorderBrush="{DynamicResource MaterialDesign.Brush.Primary}" 
+                                BorderThickness="1" 
+                                Width="210" 
+                                Height="310"
+                                Margin="0,0,20,0">
+                            <Image Source="{Binding Book.ImageUrl, Converter={StaticResource ImageSourceConverter}}"
+                                   Width="200" Height="300"
+                                   Margin="0,5,0,5" />
+                        </Border>
+                        
+                        <!-- Book Details -->
+                        <StackPanel Grid.Column="1" Margin="10,0,10,0">
+                            <!-- Authors -->
+                            <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">
+                                <Run Text="{DynamicResource Authors:}"/>
+                                <LineBreak/>
+                                <Run Text="{Binding Book.Authors, Converter={StaticResource AuthorNamesConverter}, Mode=OneWay}"/>
+                            </TextBlock>
+                            
+                            <!-- Genres -->
+                            <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                                <Run Text="{DynamicResource Genres:}"/>
+                                <LineBreak/>
+                                <Run Text="{Binding Book.Genres, Converter={StaticResource AuthorNamesConverter}, Mode=OneWay}"/>
+                            </TextBlock>
+                            
+                            <!-- Description -->
+                            <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">
+                                <Run Text="{DynamicResource ShortDescription:}"/>
+                                <LineBreak/>
+                                <Run Text="{Binding Book.ShortDescription}"/>
+                            </TextBlock>
+                        </StackPanel>
+                    </Grid>
+                    
+                    <!-- Footer - Buttons -->
+                    <StackPanel Grid.Row="2" 
+                                Orientation="Horizontal" 
+                                HorizontalAlignment="Right">
+                        <Button Content="{DynamicResource Back}" 
+                                Command="{Binding BackCommand}" 
+                                Margin="5"
+                                Style="{StaticResource MaterialDesignOutlinedButton}"/>
+                        <Button Content="{DynamicResource Read}" 
+                                Command="{Binding ReadCommand}" 
+                                Margin="5"
+                                Foreground="White"
+                                Style="{StaticResource MaterialDesignRaisedButton}"/>
+                    </StackPanel>
+                </Grid>
+            </materialDesign:Flipper.FrontContent>
+            
+
+            <materialDesign:Flipper.BackContent>
+                <Grid Margin="16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Header - Title -->
+                    <TextBlock Grid.Row="0"
+                               Text="{Binding Book.Title}"
+                               Margin="0,0,0,10"
+                               Style="{StaticResource MaterialDesignHeadline5TextBlock}"
+                               HorizontalAlignment="Center"/>
+
+                    <!-- Content - Book Content -->
+                    <ScrollViewer Grid.Row="1"
+                                  VerticalScrollBarVisibility="Auto"
+                                  HorizontalScrollBarVisibility="Disabled"
+                                  HorizontalAlignment="Center">
+                        <TextBlock Text="{Binding Book.Content}"
+                                   TextWrapping="Wrap"
+                                   Margin="20,10,20,10"
+                                   LineHeight="24"
+                                   MaxWidth="800"
+                                   HorizontalAlignment="Center"/>
+                    </ScrollViewer>
+
+                    <!-- Footer - Back Button -->
+                    <Button Grid.Row="2"
+                            Content="{DynamicResource Back}"
+                            Command="{Binding BackToInfoCommand}"
+                            HorizontalAlignment="Right"
+                            Foreground="White"
+                            Margin="0,10,0,0"/>
+                </Grid>
+            </materialDesign:Flipper.BackContent>
+        </materialDesign:Flipper>
+</UserControl>

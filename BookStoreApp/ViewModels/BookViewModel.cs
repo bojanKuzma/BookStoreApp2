@@ -33,7 +33,8 @@ public partial class BookViewModel : ObservableObject
 
     private void LoadBooks()
     {
-        Books = new ObservableCollection<Book>(_dbContext.Books.ToList());
+        Books = new ObservableCollection<Book>(_dbContext.Books.Include(b => b.Genres) 
+            .Include(b => b.Authors).ToList());
     }
     
     [RelayCommand]
@@ -47,11 +48,7 @@ public partial class BookViewModel : ObservableObject
     private void UpdateBook()
     {
         if (SelectedBook == null) return;
-        Book b = _dbContext.Books
-            .Include(b => b.Genres) 
-            .Include(b => b.Authors)
-            .First(b => b.Id == SelectedBook.Id);
-        var viewModel = new AddBookViewModel(_dbContext, _navigationService, b);
+        var viewModel = new AddBookViewModel(_dbContext, _navigationService, SelectedBook);
         _navigationService.NavigateToViewModel(viewModel);
     }
 

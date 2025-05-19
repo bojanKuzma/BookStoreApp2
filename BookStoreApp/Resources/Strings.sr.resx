@@ -61,12 +61,51 @@
         <value>Maksimalna dužina polja je 50 znakova</value>
     </data>
     <data name="GenreNavigationTitle" xml:space="preserve">
-        <value>Žanr</value>
+        <value>Žanrovi</value>
     </data>
     <data name="GenreAlreadyExists" xml:space="preserve">
         <value>Postoji žanr sa istim nazivom</value>
     </data>
     <data name="BookNavigationTitle" xml:space="preserve">
         <value>Knjige</value>
+    </data>
+    <data name="OwnedBooksNavigationTitle" xml:space="preserve">
+        <value>Moje knjige</value>
+    </data>
+    <data name="BookListNavigationTitle" xml:space="preserve">
+        <value>Knjižara</value>
+    </data>
+    <data name="Approved" xml:space="preserve">
+        <value>Odobreno</value>
+    </data>
+    <data name="Rejected" xml:space="preserve">
+        <value>Odbijeno</value>
+    </data>
+    <data name="Pending" xml:space="preserve">
+        <value>Na čekanju</value>
+    </data>
+    <data name="All" xml:space="preserve">
+        <value>Svi</value>
+    </data>
+    <data name="ConfirmRejection" xml:space="preserve">
+        <value>Potvrdi odbijanje</value>
+    </data>
+    <data name="ConfirmApproval" xml:space="preserve">
+        <value>Potvrdi odobrenje</value>
+    </data>
+    <data name="RangeError" xml:space="preserve">
+        <value>Molim Vas unesite važeću godinu od 4 cifre</value>
+    </data>
+    <data name="NotificationMessage" xml:space="preserve">
+        <value>Zahtjev je uspješno poslan</value>
+    </data>
+    <data name="BookOrdersNavigationTitle" xml:space="preserve">
+        <value>Narudžbe knjiga</value>
+    </data>
+    <data name="BookRequestsNavigationTitle" xml:space="preserve">
+        <value>Zahtjevi za knjige</value>
+    </data>
+    <data name="AddBookRequestNavigationTitle" xml:space="preserve">
+        <value>Zahtjev za novu knjigu</value>
     </data>
 </root>

@@ -60,6 +60,33 @@ namespace BookStoreApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Neue Buchanfrage.
+        /// </summary>
+        internal static string AddBookRequestNavigationTitle {
+            get {
+                return ResourceManager.GetString("AddBookRequestNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alle.
+        /// </summary>
+        internal static string All {
+            get {
+                return ResourceManager.GetString("All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Genehmigt.
+        /// </summary>
+        internal static string Approved {
+            get {
+                return ResourceManager.GetString("Approved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Autoren.
         /// </summary>
         internal static string AuthorsNavigationTitle {
@@ -69,11 +96,56 @@ namespace BookStoreApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Buchladen.
+        /// </summary>
+        internal static string BookListNavigationTitle {
+            get {
+                return ResourceManager.GetString("BookListNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bücher.
         /// </summary>
         internal static string BookNavigationTitle {
             get {
                 return ResourceManager.GetString("BookNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Buchbestellungen.
+        /// </summary>
+        internal static string BookOrdersNavigationTitle {
+            get {
+                return ResourceManager.GetString("BookOrdersNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Buchanfragen.
+        /// </summary>
+        internal static string BookRequestsNavigationTitle {
+            get {
+                return ResourceManager.GetString("BookRequestsNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Genehmigung bestätigen.
+        /// </summary>
+        internal static string ConfirmApproval {
+            get {
+                return ResourceManager.GetString("ConfirmApproval", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ablehnung bestätigen.
+        /// </summary>
+        internal static string ConfirmRejection {
+            get {
+                return ResourceManager.GetString("ConfirmRejection", resourceCulture);
             }
         }
         
@@ -123,7 +195,7 @@ namespace BookStoreApp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Genre.
+        ///   Looks up a localized string similar to Genres.
         /// </summary>
         internal static string GenreNavigationTitle {
             get {
@@ -168,6 +240,42 @@ namespace BookStoreApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Anfrage erfolgreich gesendet.
+        /// </summary>
+        internal static string NotificationMessage {
+            get {
+                return ResourceManager.GetString("NotificationMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Meine Bücher.
+        /// </summary>
+        internal static string OwnedBooksNavigationTitle {
+            get {
+                return ResourceManager.GetString("OwnedBooksNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ausstehend.
+        /// </summary>
+        internal static string Pending {
+            get {
+                return ResourceManager.GetString("Pending", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bitte geben Sie eine gültige 4-stellige Jahreszahl ein.
+        /// </summary>
+        internal static string RangeError {
+            get {
+                return ResourceManager.GetString("RangeError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Benutzername oder E-Mail wird bereits verwendet.
         /// </summary>
         internal static string RegistrationExistingError {
@@ -182,6 +290,15 @@ namespace BookStoreApp.Resources {
         internal static string RegistrationNavigationTitle {
             get {
                 return ResourceManager.GetString("RegistrationNavigationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Abgelehnt.
+        /// </summary>
+        internal static string Rejected {
+            get {
+                return ResourceManager.GetString("Rejected", resourceCulture);
             }
         }
         

@@ -10,6 +10,9 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
     public DbSet<Author> Authors { get; set; }
     public DbSet<Genre> Genres { get; set; }
     public DbSet<Book> Books { get; set; }
+    public DbSet<BookRequest> BookRequests { get; set; }
+    
+    public DbSet<BookOrder> BookOrders { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {

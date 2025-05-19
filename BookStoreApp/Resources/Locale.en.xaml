@@ -54,5 +54,24 @@
     <system:String x:Key="SelectAuthors">Select authors</system:String>
     <system:String x:Key="ImageUrl">Book cover URL</system:String>
     <system:String x:Key="ShortDescription">Short Description</system:String>
+    <system:String x:Key="ShortDescription:">Short Description:</system:String>
     <system:String x:Key="Content">Content</system:String>
+    
+    <system:String x:Key="Authors:">Authors:</system:String>
+    <system:String x:Key="Order">Order</system:String>
+    <system:String x:Key="Read">Read</system:String>
+    <system:String x:Key="Back">Back</system:String>
+    
+    <system:String x:Key="Actions">Actions</system:String>
+    <system:String x:Key="OrderDate">Order date</system:String>
+    <system:String x:Key="Approved">Approved</system:String>
+    <system:String x:Key="Pending">Pending</system:String>
+    <system:String x:Key="Rejected">Rejected</system:String>
+    <system:String x:Key="All">All</system:String>
+    <system:String x:Key="Reject">Reject</system:String>
+    
+    <system:String x:Key="Author">Author</system:String>
+    <system:String x:Key="PublicationYear">Publication year</system:String>
+    <system:String x:Key="SendRequest">Send request</system:String>
+    <system:String x:Key="RequestDate">Request date</system:String>
 </ResourceDictionary>

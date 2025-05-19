@@ -120,6 +120,24 @@
                 <DataTemplate DataType="{x:Type vm:AddBookViewModel}">
                     <views:AddBookView/>
                 </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:BookListViewModel}">
+                    <views:BookListView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:OwnedBooksModelView}">
+                    <views:OwnedBooksView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:ReadBookViewModel}">
+                    <views:ReadBookView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:BookOrdersViewModel}">
+                    <views:BookOrdersView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:BookRequestsViewModel}">
+                    <views:BookRequestsView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:AddBookRequestViewModel}">
+                    <views:AddBookRequestView/>
+                </DataTemplate>
             </ContentControl.Resources>
         </ContentControl>
     </Grid>

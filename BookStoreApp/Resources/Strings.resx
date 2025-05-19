@@ -61,12 +61,51 @@
         <value>Max length of the field is 50 characters</value>
     </data>
     <data name="GenreNavigationTitle" xml:space="preserve">
-        <value>Genre</value>
+        <value>Genres</value>
     </data>
     <data name="GenreAlreadyExists" xml:space="preserve">
         <value>A Genre with the same name exists</value>
     </data>
     <data name="BookNavigationTitle" xml:space="preserve">
         <value>Books</value>
+    </data>
+    <data name="OwnedBooksNavigationTitle" xml:space="preserve">
+        <value>My books</value>
+    </data>
+    <data name="BookListNavigationTitle" xml:space="preserve">
+        <value>Bookshop</value>
+    </data>
+    <data name="Approved" xml:space="preserve">
+        <value>Approved</value>
+    </data>
+    <data name="Rejected" xml:space="preserve">
+        <value>Rejected</value>
+    </data>
+    <data name="Pending" xml:space="preserve">
+        <value>Pending</value>
+    </data>
+    <data name="All" xml:space="preserve">
+        <value>All</value>
+    </data>
+    <data name="ConfirmRejection" xml:space="preserve">
+        <value>Confirm rejection</value>
+    </data>
+    <data name="ConfirmApproval" xml:space="preserve">
+        <value>Confirm approval</value>
+    </data>
+    <data name="RangeError" xml:space="preserve">
+        <value>Please enter a valid 4-digit year</value>
+    </data>
+    <data name="NotificationMessage" xml:space="preserve">
+        <value>Request sent successfully</value>
+    </data>
+    <data name="BookOrdersNavigationTitle" xml:space="preserve">
+        <value>Book orders</value>
+    </data>
+    <data name="BookRequestsNavigationTitle" xml:space="preserve">
+        <value>Book requests</value>
+    </data>
+    <data name="AddBookRequestNavigationTitle" xml:space="preserve">
+        <value>New book request</value>
     </data>
 </root>

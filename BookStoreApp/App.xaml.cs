@@ -38,6 +38,12 @@ public partial class App : Application
                 .AddTransient<AddGenreViewModel>()
                 .AddTransient<BookViewModel>()
                 .AddTransient<AddBookViewModel>()
+                .AddTransient<BookListViewModel>()
+                .AddTransient<OwnedBooksModelView>()
+                .AddTransient<ReadBookViewModel>()
+                .AddTransient<BookOrdersViewModel>()
+                .AddTransient<BookRequestsViewModel>()
+                .AddTransient<AddBookRequestViewModel>()
                 // Views
                 .AddTransient<HomeView>()
                 .AddTransient<DashboardView>()
@@ -51,6 +57,12 @@ public partial class App : Application
                 .AddTransient<AddGenreView>()
                 .AddTransient<BookView>()
                 .AddTransient<AddBookView>()
+                .AddTransient<BookListView>()
+                .AddTransient<OwnedBooksView>()
+                .AddTransient<ReadBookView>()
+                .AddTransient<BookOrdersView>()
+                .AddTransient<AddBookRequestView>()
+                .AddTransient<BookRequestsView>()
                 .BuildServiceProvider());
     }
 

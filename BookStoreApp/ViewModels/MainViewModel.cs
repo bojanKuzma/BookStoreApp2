@@ -54,6 +54,14 @@ public partial class MainViewModel : ObservableObject
             case { Role: "Admin" }:
                 NavigationItems.Add(new NavigationItem
                     { Title = Strings.HomeNavigationTitle, Icon = "AccountGroup", ViewModelType = typeof(HomeViewModel) });
+                NavigationItems.Add(new NavigationItem
+                {
+                    Title = Strings.SettingsNavigationTitle, Icon = "Cog", ViewModelType = typeof(SettingsViewModel)
+                });
+                NavigationItems.Add(new NavigationItem
+                    { Title = Strings.LogoutNavigationTitle, Icon = "Logout", ViewModelType = typeof(LoginViewModel) });
+                break;
+            case { Role: "Manager" }:
                 NavigationItems.Add(
                     new NavigationItem
                     {
@@ -74,8 +82,13 @@ public partial class MainViewModel : ObservableObject
                 });
                 NavigationItems.Add(new NavigationItem
                 {
-                    Title = Strings.DashboardNavigationTitle, Icon = "Dashboard",
-                    ViewModelType = typeof(DashboardViewModel)
+                    Title = Strings.BookOrdersNavigationTitle, Icon = "OrderBoolAscendingVariant",
+                    ViewModelType = typeof(BookOrdersViewModel)
+                });
+                NavigationItems.Add(new NavigationItem
+                {
+                    Title = Strings.BookRequestsNavigationTitle, Icon = "FrequentlyAskedQuestions",
+                    ViewModelType = typeof(BookRequestsViewModel)
                 });
                 NavigationItems.Add(new NavigationItem
                 {
@@ -83,11 +96,23 @@ public partial class MainViewModel : ObservableObject
                 });
                 NavigationItems.Add(new NavigationItem
                     { Title = Strings.LogoutNavigationTitle, Icon = "Logout", ViewModelType = typeof(LoginViewModel) });
-
                 break;
             case { Role: "User" }:
                 NavigationItems.Add(new NavigationItem
-                    { Title = Strings.HomeNavigationTitle, Icon = "Home", ViewModelType = typeof(HomeViewModel) });
+                {
+                    Title = Strings.BookListNavigationTitle, Icon = "Cart",
+                    ViewModelType = typeof(BookListViewModel)
+                });
+                NavigationItems.Add(new NavigationItem
+                {
+                    Title = Strings.OwnedBooksNavigationTitle, Icon = "BookOpenPageVariant",
+                    ViewModelType = typeof(OwnedBooksModelView)
+                });
+                NavigationItems.Add(new NavigationItem
+                {
+                    Title = Strings.AddBookRequestNavigationTitle, Icon = "FrequentlyAskedQuestions",
+                    ViewModelType = typeof(AddBookRequestViewModel)
+                });
                 NavigationItems.Add(new NavigationItem
                 {
                     Title = Strings.SettingsNavigationTitle, Icon = "Cog", ViewModelType = typeof(SettingsViewModel)
