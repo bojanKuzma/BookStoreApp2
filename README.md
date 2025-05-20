@@ -39,39 +39,39 @@ BookStore is a desktop application for managing and reading books, with differen
 ### Authentication
 - Use the login screen to enter credentials
 
-![login.png](readme-files/login.png)
+![login.png](BookStoreApp/readme-files/login.png)
 
 - New users can register via the Registration page
 
-![registration.png](readme-files/registration.png)
+![registration.png](BookStoreApp/readme-files/registration.png)
 
 - Logout via the navigation menu
 
-![logout.png](readme-files/logout.png)
+![logout.png](BookStoreApp/readme-files/logout.png)
 
 ### Book List (User)
 - View all available books for purchase
 - Filter and search for books
 - Purchase books to add to your collection
 
-![bookshop.png](readme-files/bookshop.png)
+![bookshop.png](BookStoreApp/readme-files/bookshop.png)
 
 ### Owned Books (User)
 - View books you've purchased
 - Open a book to view details or read content
 - Books display cover, author, genres, and description
 
-![owned-books.png](readme-files/owned-books.png)
+![owned-books.png](BookStoreApp/readme-files/owned-books.png)
 
 ### Reading Books (User)
 1. Select a book from your owned books
 
-![read-book.png](readme-files/read-book.png)
+![read-book.png](BookStoreApp/readme-files/read-book.png)
 
 2. Click "Read" to flip to the reading view
 3. Scroll through the book content
 
-![book-content.png](readme-files/book-content.png)
+![book-content.png](BookStoreApp/readme-files/book-content.png)
 
 4. Click "Back" to return to book details
 
@@ -81,20 +81,20 @@ BookStore is a desktop application for managing and reading books, with differen
 3. Submit the request
 4. A confirmation toast will appear when submitted
 
-![book-request.png](readme-files/book-request.png)
+![book-request.png](BookStoreApp/readme-files/book-request.png)
 
 ### Managing Authors/Genres/Books (Manager)
 - Add, edit, or remove authors
 
-![authors.png](readme-files/authors.png)
+![authors.png](BookStoreApp/readme-files/authors.png)
 
 - Create and manage book genres
 
-![genres.png](readme-files/genres.png)
+![genres.png](BookStoreApp/readme-files/genres.png)
 
 - Add new books with details and content
 
-![books.png](readme-files/books.png)
+![books.png](BookStoreApp/readme-files/books.png)
 
 ### Book Orders (Manager)
 - View all book orders sorted by date
@@ -102,12 +102,12 @@ BookStore is a desktop application for managing and reading books, with differen
 - View order details including user information and book details
 - Mark orders as completed or pending
 
-![book-orders.png](readme-files/book-orders.png)
+![book-orders.png](BookStoreApp/readme-files/book-orders.png)
 
 ### Book Requests (Manager)
 - View all book requests sorted by date
 
-![book-requests-list.png](readme-files/book-requests-list.png)
+![book-requests-list.png](BookStoreApp/readme-files/book-requests-list.png)
 
 ### User Management (Admin)
 - View all users in the system
@@ -115,18 +115,18 @@ BookStore is a desktop application for managing and reading books, with differen
 - Delete users if necessary
 - Create new users
 
-![user-management.png](readme-files/user-management.png)
+![user-management.png](BookStoreApp/readme-files/user-management.png)
 
 ### Settings (User/Manager/Admin)
 - Change application theme (dark/light) and primary color
 
-![settings.png](readme-files/settings.png)
+![settings.png](BookStoreApp/readme-files/settings.png)
 
 ### Language Support (User/Manager/Admin)
 - Available languages can be changed from the dropdown in the top right
 - The app will immediately update all text to the selected language
 
-![language.png](readme-files/language.png)
+![language.png](BookStoreApp/readme-files/language.png)
 
 ## Troubleshooting
 - If you encounter database errors, ensure the application has the necessary permissions
