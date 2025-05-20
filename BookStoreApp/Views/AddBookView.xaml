@@ -51,13 +51,17 @@
             </StackPanel>
             
             <TextBox Text="{Binding ShortDescription}" Margin="0 ,10" Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                     materialDesign:HintAssist.Hint="{DynamicResource ShortDescription}" />
+                     materialDesign:HintAssist.Hint="{DynamicResource ShortDescription}"
+                     AcceptsReturn="True"
+                     VerticalScrollBarVisibility="Auto"
+                     MaxWidth="1000"
+                     MaxHeight="40"/>
             
             <TextBox
                 Margin="0 ,10"
                 TextWrapping="Wrap"
-                VerticalAlignment="Stretch"
                 MinWidth="280"
+                MaxWidth="1000"
                 AcceptsReturn="True"
                 VerticalScrollBarVisibility="Auto"
                 SpellCheck.IsEnabled="True"
