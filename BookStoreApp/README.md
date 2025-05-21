@@ -128,6 +128,10 @@ BookStore is a desktop application for managing and reading books, with differen
 
 ![language.png](readme-files/language.png)
 
+### Database Conceptual Model
+
+![conceptual-model.png](readme-files/conceptual-model.png)
+
 ## Troubleshooting
 - If you encounter database errors, ensure the application has the necessary permissions
 - For visual issues, try restarting the application
